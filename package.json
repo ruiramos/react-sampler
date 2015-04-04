@@ -4,10 +4,10 @@
   "description": "react-sampler allows you to easily launch sound samples from key events",
   "main": "index.js",
   "scripts": {
-    "build-lib": "jsx -x jsx src/ lib/",
+    "build-lib": "babel src/ReactSampler.jsx -o lib/ReactSampler.js",
     "build-dist": "browserify -t [reactify --es6] src/ReactSampler.jsx -o dist/react-sampler.js",
     "build-example": "browserify -t [reactify --es6] examples/src/index.jsx -o examples/dist/index.js",
-    "watch": "jsx -w -x jsx src/ lib/",
+    "watch": "babel -w src/ReactSampler.jsx -o lib/ReactSampler.js",
     "watch-example": "watchify -t [reactify --es6] examples/src/index.jsx -o examples/dist/index.js",
     "run-example": "http-server examples/dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,5 +28,8 @@
   "keywords": [
     "react",
     "react-component"
-  ]
+  ],
+  "devDependencies": {
+    "babel": "^5.0.8"
+  }
 }
