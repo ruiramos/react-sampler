@@ -2,7 +2,9 @@ react-sampler
 ==============
 Because your apps are boring.
 
-Developing an invoicing app using React? Think your TodoMVC could use a little flare?
+Developing an invoicing app using React?
+Another project management app?!
+Think your TodoMVC could use a little... flare?
 React Sampler might just be what you need!
 
 Easily assign sound samples to keyboard keys and make your apps fun again!
@@ -12,6 +14,8 @@ Sound files from [freesound.org](http://freesound.org/)
 
 ## Demo
 Soon.
+
+As seen on [great.dj](http://great.dj/)!
 
 ## Usage
 
