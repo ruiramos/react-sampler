@@ -3,9 +3,12 @@ react-sampler
 Because your apps are boring.
 
 Developing an invoicing app using React?
+
 Another project management app?!
+
 Think your TodoMVC could use a little... flare?
-React Sampler might just be what you need!
+
+___React Sampler might just be what you need!___
 
 Easily assign sound samples to keyboard keys and make your apps fun again!
 Delight your users with sounds for every occasion, from a victory Horn to a hopeless Gun Shot!
@@ -15,11 +18,11 @@ Sound files from [freesound.org](http://freesound.org/)
 ## Demo
 Soon.
 
-As seen on [great.dj](http://great.dj/)!
+As seen live on [great.dj](http://great.dj/)!
 
 ## Usage
 
-```
+```javascript
 var Sampler = require('react-sampler');
 
 var samples = [{
@@ -39,7 +42,7 @@ var samples = [{
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -m 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+5. Submit a pull request
 
 ## License
 
