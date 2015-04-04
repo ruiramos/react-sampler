@@ -1,2 +1,2 @@
 # react-sampler
-Make your apps React less boring
+Makes your apps less boring.
