@@ -5,6 +5,7 @@ To run this example just clone the repository and then:
 
 ```
   npm install
+  npm install http-server -g
   npm run run-example
 ```
 And open a browser in [`localhost:8080`](http://localhost:8080)
