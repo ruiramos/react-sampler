@@ -10,7 +10,7 @@ Think your TodoMVC could use a little... flare?
 ___React Sampler might just be what you need!___
 
 Easily assign sound samples to keyboard keys and make your apps fun again!
-Delight your users with sounds for every occasion, from a victory Horn to a hopeless Gun Shot!
+Delight your users with sounds for every occasion, from a victory Horn to a desperate Gun Shot!
 
 Sound files from [freesound.org](http://freesound.org/)
 
