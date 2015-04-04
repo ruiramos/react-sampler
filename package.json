@@ -29,7 +29,4 @@
     "react",
     "react-component"
   ],
-  "devDependencies": {
-    "babel": "^5.0.8"
-  }
 }
