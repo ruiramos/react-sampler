@@ -8,6 +8,8 @@ React Sampler might just be what you need!
 Easily assign sound samples to keyboard keys and make your apps fun again!
 Delight your users with sounds for every occasion, from a victory Horn to a hopeless Gun Shot!
 
+Sound files from [freesound.org](http://freesound.org/)
+
 ## Demo
 Soon.
 
