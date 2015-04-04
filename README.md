@@ -1,6 +1,5 @@
 react-sampler
 ==============
-Because your apps are boring.
 
 Developing an invoicing app using React?
 
