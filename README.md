@@ -15,7 +15,7 @@ Delight your users with sounds for every occasion, from a victory Horn to a hope
 Sound files from [freesound.org](http://freesound.org/)
 
 ## Demo
-Soon.
+Check the [GitHub page](http://ruiramos.github.io/react-sampler) or the examples folder (there's a README there as well).
 
 As seen live on [great.dj](http://great.dj/)!
 
