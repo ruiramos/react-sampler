@@ -9,27 +9,27 @@ var Sampler = require('../../index');
   have a few ms of silence or whatever
 **/
 var samples = [{
-  file: '/audio/horn.mp3',
+  file: '/react-sampler/audio/horn.mp3',
   key: 'h', // horn
   startAt: 0.2 //seconds, obvs
 },{
-  file: '/audio/orch5.wav',
+  file: '/react-sampler/audio/orch5.wav',
   key: 'o', // orchestra hit
   startAt: 0.05
 },{
-  file: '/audio/rimshot.mp3',
+  file: '/react-sampler/audio/rimshot.mp3',
   key: 's' // rimshot
 },{
-  file: '/audio/cowbell.mp3',
+  file: '/react-sampler/audio/cowbell.mp3',
   key: 'c' // cowbell
 },{
-  file: '/audio/gun.mp3',
+  file: '/react-sampler/audio/gun.mp3',
   key: 'g' // gun shot
 },{
-  file: '/audio/reload.wav',
+  file: '/react-sampler/audio/reload.wav',
   key: 'r' // reload
 },{
-  file: '/audio/machinegun.mp3',
+  file: '/react-sampler/audio/machinegun.mp3',
   key: 'm' // machine gun
 }];
 
@@ -44,24 +44,24 @@ var ReactSamplerExample = React.createClass({displayName: "ReactSamplerExample",
 
   render: function() {
     return (
-      React.createElement("div", null, 
-        React.createElement("h1", null, "The sampler is on!"), 
-        React.createElement("ul", {className: "keys"}, 
-          React.createElement("li", {"data-key": "h"}, 
-            React.createElement("span", {className: "key"}, "h"), React.createElement("span", {className: "sample"}, "horn")), 
-          React.createElement("li", {"data-key": "o"}, 
-            React.createElement("span", {className: "key"}, "o"), React.createElement("span", {className: "sample"}, "orchestra hit")), 
-          React.createElement("li", {"data-key": "s"}, 
-            React.createElement("span", {className: "key"}, "s"), React.createElement("span", {className: "sample"}, "rimshot")), 
-          React.createElement("li", {"data-key": "c"}, 
-            React.createElement("span", {className: "key"}, "c"), React.createElement("span", {className: "sample"}, "cowbell")), 
-          React.createElement("li", {"data-key": "g"}, 
-            React.createElement("span", {className: "key"}, "g"), React.createElement("span", {className: "sample"}, "gun shot")), 
-          React.createElement("li", {"data-key": "r"}, 
-            React.createElement("span", {className: "key"}, "r"), React.createElement("span", {className: "sample"}, "reload")), 
-          React.createElement("li", {"data-key": "m"}, 
+      React.createElement("div", null,
+        React.createElement("h1", null, "The sampler is on!"),
+        React.createElement("ul", {className: "keys"},
+          React.createElement("li", {"data-key": "h"},
+            React.createElement("span", {className: "key"}, "h"), React.createElement("span", {className: "sample"}, "horn")),
+          React.createElement("li", {"data-key": "o"},
+            React.createElement("span", {className: "key"}, "o"), React.createElement("span", {className: "sample"}, "orchestra hit")),
+          React.createElement("li", {"data-key": "s"},
+            React.createElement("span", {className: "key"}, "s"), React.createElement("span", {className: "sample"}, "rimshot")),
+          React.createElement("li", {"data-key": "c"},
+            React.createElement("span", {className: "key"}, "c"), React.createElement("span", {className: "sample"}, "cowbell")),
+          React.createElement("li", {"data-key": "g"},
+            React.createElement("span", {className: "key"}, "g"), React.createElement("span", {className: "sample"}, "gun shot")),
+          React.createElement("li", {"data-key": "r"},
+            React.createElement("span", {className: "key"}, "r"), React.createElement("span", {className: "sample"}, "reload")),
+          React.createElement("li", {"data-key": "m"},
             React.createElement("span", {className: "key"}, "m"), React.createElement("span", {className: "sample"}, "machine gun"))
-        ), 
+        ),
 
         React.createElement(Sampler, {samples: samples, onLaunchSample: this.handleSampleLaunch})
       )
