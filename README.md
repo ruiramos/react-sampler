@@ -21,6 +21,14 @@ As seen live on [great.dj](http://great.dj/)!
 
 ## Usage
 
+Install through NPM
+
+```
+  npm install react-sampler --save
+```
+
+Then include it on all your React apps like so:
+
 ```javascript
 var Sampler = require('react-sampler');
 
