@@ -3,7 +3,7 @@ react-sampler
 
 Developing an invoicing app using React?
 
-Another project management app?!
+Oh great, another project management solution?!
 
 Think your TodoMVC could use a little... flare?
 
