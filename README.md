@@ -3,7 +3,7 @@ react-sampler
 
 Developing an invoicing app using React?
 
-Another project management app?!
+Oh great, another project management solution?!
 
 Think your TodoMVC could use a little... flare?
 
@@ -20,6 +20,14 @@ Check the [GitHub page](http://ruiramos.github.io/react-sampler) or the examples
 As seen live on [great.dj](http://great.dj/)!
 
 ## Usage
+
+Install through NPM
+
+```
+  npm install react-sampler --save
+```
+
+Then include it on all your React apps like so:
 
 ```javascript
 var Sampler = require('react-sampler');
