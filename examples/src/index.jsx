@@ -62,7 +62,7 @@ var ReactSamplerExample = React.createClass({
             <span className="key">m</span><span className="sample">machine gun</span></li>
         </ul>
 
-        <Sampler samples={samples} onLaunchSample={this.handleSampleLaunch} />
+        <Sampler samples={samples} onLaunchSample={this.handleSampleLaunch} disabled={false} />
       </div>
     );
   }

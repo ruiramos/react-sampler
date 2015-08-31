@@ -4,13 +4,14 @@ var React = require('react');
 module.exports = React.createClass({
   propTypes: {
     samples: React.PropTypes.array.isRequired,
-    onLaunchSample: React.PropTypes.func
+    onLaunchSample: React.PropTypes.func,
+    disabled: React.PropTypes.bool
   },
 
   componentWillMount: function(){
     /**
-      This object will memo the Audio objects so we only
-      create them once.
+      This object will memo the Audio objects so we
+      create them only once.
     **/
     this.soundElements = {};
 
@@ -31,9 +32,10 @@ module.exports = React.createClass({
 
   handleKeyDown: function(e){
     /**
-      Prevent it from working where the focus is not on the body
+      Prevent it from working when the focus is not on the body
+      or when the sampler is disabled
     **/
-    if(e.target !== document.body) return;
+    if(e.target !== document.body || this.props.disabled) return;
 
     this.samples.forEach((sample) => {
       if(sample.keyCode === e.which){

@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/ruiramos/react-sampler",
   "dependencies": {
-    "react": "~0.13.1"
+    "react": "^0.13.3",
+    "reactify": "^1.1.1"
   },
   "keywords": [
     "react",
