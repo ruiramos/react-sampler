@@ -1,6 +1,6 @@
 {
   "name": "react-sampler",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "react-sampler allows you to easily launch sound samples from key events",
   "main": "index.js",
   "scripts": {
