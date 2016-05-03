@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactDOM = require('react-dom');
 var Sampler = require('../../index');
 
 /**
@@ -69,7 +70,7 @@ var ReactSamplerExample = React.createClass({
 
 });
 
-React.render(
+ReactDOM.render(
   <ReactSamplerExample />,
   document.getElementById('content')
 );

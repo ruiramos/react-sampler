@@ -23,11 +23,11 @@ module.exports = React.createClass({
       return sample;
     });
 
-    /**
-      Magic!
-    **/
     window.addEventListener('keydown', this.handleKeyDown);
+  },
 
+  componentWillUnmount: function(){
+    window.removeEventListener('keydown', this.handleKeyDown);
   },
 
   handleKeyDown: function(e){

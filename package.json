@@ -4,12 +4,12 @@
   "description": "react-sampler allows you to easily launch sound samples from key events",
   "main": "index.js",
   "scripts": {
-    "build-lib": "babel src/ReactSampler.jsx -o lib/ReactSampler.js",
-    "build-dist": "browserify -t [reactify --es6] src/ReactSampler.jsx -o dist/react-sampler.js",
-    "build-example": "browserify -t [reactify --es6] examples/src/index.jsx -o examples/dist/index.js",
-    "watch": "babel -w src/ReactSampler.jsx -o lib/ReactSampler.js",
-    "watch-example": "watchify -t [reactify --es6] examples/src/index.jsx -o examples/dist/index.js",
-    "run-example": "http-server examples/dist/",
+    "build-lib": "./node_modules/.bin/babel src/ReactSampler.jsx -o lib/ReactSampler.js",
+    "build-dist": "./node_modules/.bin/browserify -t [reactify --es6] src/ReactSampler.jsx -o dist/react-sampler.js",
+    "build-example": "./node_modules/.bin/browserify -t [reactify --es6] examples/src/index.jsx -o examples/dist/index.js",
+    "watch": "./node_modules/.bin/babel -w src/ReactSampler.jsx -o lib/ReactSampler.js",
+    "watch-example": "./node_modules/.bin/watchify -t [reactify --es6] examples/src/index.jsx -o examples/dist/index.js",
+    "run-example": "./node_modules/.bin/http-server examples/dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,11 +23,19 @@
   },
   "homepage": "https://github.com/ruiramos/react-sampler",
   "dependencies": {
-    "react": "^0.13.3",
-    "reactify": "^1.1.1"
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2"
   },
   "keywords": [
     "react",
     "react-component"
-  ]
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.8.0",
+    "babel-preset-react": "^6.5.0",
+    "browserify": "^13.0.0",
+    "http-server": "^0.9.0",
+    "reactify": "^1.1.1",
+    "watchify": "^3.7.0"
+  }
 }
