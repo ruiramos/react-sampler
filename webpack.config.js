@@ -9,12 +9,13 @@ module.exports = {
     filename: 'index.js',
     libraryTarget: 'commonjs2'
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
         test: /\.jsx?$/,
         include: path.resolve(__dirname, 'src'),
-        exclude: /(node_modules|bower_components|build)/,
+        exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader'
         }
@@ -22,6 +23,7 @@ module.exports = {
     ]
   },
   externals: {
-    'react': 'commonjs react' 
+    'react': 'commonjs react',
+    'prop-types': 'commonjs prop-types' 
   }
 };

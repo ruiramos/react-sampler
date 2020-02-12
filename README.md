@@ -34,7 +34,7 @@ var Sampler = require('react-sampler');
 
 var samples = [{
   file: '/path/to/file.mp3',
-  key: 'h',
+  key: 'h'
   startAt: 0 // in seconds, defaults to 0 (begging of the file)
 },{
   ...

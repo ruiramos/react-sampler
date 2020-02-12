@@ -1,14 +1,13 @@
 /* jshint esnext: true */
 const React = require('react');
+const PropTypes = require('prop-types');
 
-const ReactSampler = React.createClass({
-  propTypes: {
-    samples: React.PropTypes.array.isRequired,
-    onLaunchSample: React.PropTypes.func,
-    disabled: React.PropTypes.bool
-  },
+class ReactSampler extends React.Component {
+  constructor(props){
+    super(props);
+  }
 
-  componentWillMount: function(){
+  componentWillMount(){
     /**
       This object will memo the Audio objects so we
       create them only once.
@@ -23,14 +22,14 @@ const ReactSampler = React.createClass({
       return sample;
     });
 
-    window.addEventListener('keydown', this.handleKeyDown);
-  },
+    window.addEventListener('keydown', this.handleKeyDown.bind(this));
+  }
 
-  componentWillUnmount: function(){
-    window.removeEventListener('keydown', this.handleKeyDown);
-  },
+  componentWillUnmount(){
+    window.removeEventListener('keydown', this.handleKeyDown.bind(this));
+  }
 
-  handleKeyDown: function(e){
+  handleKeyDown(e){
     /**
       Prevent it from working when the focus is not on the body
       or when the sampler is disabled
@@ -45,9 +44,9 @@ const ReactSampler = React.createClass({
           this.props.onLaunchSample(sample);
       }
     });
-  },
+  }
 
-  playSound: function(sample){
+  playSound(sample){
     var soundPath = sample.file,
         start = sample.startAt || 0;
 
@@ -59,14 +58,20 @@ const ReactSampler = React.createClass({
       this.soundElements[soundPath] = new Audio(soundPath);
       this.soundElements[soundPath].play();
     }
-  },
+  }
 
-  render: function() {
+  render() {
     return (
       <span />
     );
   }
 
-});
+};
+
+ReactSampler.propTypes = {
+  samples: PropTypes.array.isRequired,
+  onLaunchSample: PropTypes.func,
+  disabled: PropTypes.bool
+};
 
 export default ReactSampler;
