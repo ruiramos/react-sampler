@@ -1,7 +1,7 @@
 /* jshint esnext: true */
-var React = require('react');
+const React = require('react');
 
-module.exports = React.createClass({
+const ReactSampler = React.createClass({
   propTypes: {
     samples: React.PropTypes.array.isRequired,
     onLaunchSample: React.PropTypes.func,
@@ -69,3 +69,4 @@ module.exports = React.createClass({
 
 });
 
+export default ReactSampler;

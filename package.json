@@ -4,13 +4,8 @@
   "description": "react-sampler allows you to easily launch sound samples from key events",
   "main": "index.js",
   "scripts": {
-    "build-lib": "./node_modules/.bin/babel src/ReactSampler.jsx -o lib/ReactSampler.js",
-    "build-dist": "./node_modules/.bin/browserify -t [reactify --es6] src/ReactSampler.jsx -o dist/react-sampler.js",
-    "build-example": "./node_modules/.bin/browserify -t [reactify --es6] examples/src/index.jsx -o examples/dist/index.js",
-    "watch": "./node_modules/.bin/babel -w src/ReactSampler.jsx -o lib/ReactSampler.js",
-    "watch-example": "./node_modules/.bin/watchify -t [reactify --es6] examples/src/index.jsx -o examples/dist/index.js",
-    "run-example": "./node_modules/.bin/http-server examples/dist/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -22,7 +17,8 @@
     "url": "https://github.com/ruiramos/react-sampler/issues"
   },
   "homepage": "https://github.com/ruiramos/react-sampler",
-  "dependencies": {
+  "dependencies": {},
+  "peerDependencies": {
     "react": "^15.0.2",
     "react-dom": "^15.0.2"
   },
@@ -31,11 +27,14 @@
     "react-component"
   ],
   "devDependencies": {
-    "babel-cli": "^6.8.0",
-    "babel-preset-react": "^6.5.0",
-    "browserify": "^13.0.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/plugin-transform-react-jsx": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.6",
     "http-server": "^0.9.0",
-    "reactify": "^1.1.1",
-    "watchify": "^3.7.0"
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
   }
 }
